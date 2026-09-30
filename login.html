@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(53, 152, 220);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .page {
+            width: 360px;
+            height: 360px;
+            position: absolute;
+            background-color: white;
+            left: 500px;
+            top: 30px;
+            border-radius: 10px;
+        }
+        h1 {
+            margin-left: 20px;
+        }
+        .top {
+            margin-left: 20px;
+            color: gray;
+            max-width: 330px;
+        }
+        .main {
+            width: 320px;
+            height: 30px;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+        .rem {
+            margin-left: 10px;
+        }
+        .forgot {
+            margin-left: 78px;
+            text-decoration: none;
+            color: rgb(53, 152, 220);
+            transition: all 0.3s ease-in-out;
+            border-bottom: 2px solid transparent;
+        }
+        button {
+            width: 335px;
+            height: 40px;
+            color: white;
+            background-color: rgb(53, 152, 220);
+            font-size: 20px;
+            margin-left: 10px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        .signup {
+            color: white;
+            margin-left: 70px;
+            margin-top: 50px;
+        }
+        .sp {
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            color: black;
+            background-color: transparent;
+        }
+        .forgot:hover {
+            border-bottom: 2px solid rgb(53, 152, 220);
+        }
+        .sp:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>Login</h1>
+        <p class="top">Welcome! Please fill email and password to sign in into your account</p>
+        <hr><br>
+        <form action="./ok.html">
+            <input class="main" type="email" name="email" id="email" required placeholder="Email">
+            <br><br>
+            <input class="main" type="password" name="password" id="password" required placeholder="Password">
+            <br><br>
+            <input class="rem" type="checkbox" name="remember" id="remember">
+            Remember me
+            <a href="" class="forgot">Forgot Password?</a>
+            <br><br>
+            <button type="submit">Log in</button>
+            <p class="signup">Don't have an account? <a href="./index.html" class="sp">Sign up</a></p>
+        </form>
+    </div>
+</body>
+</html>

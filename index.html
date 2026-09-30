@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(53, 152, 220);
+        }
+        .color {
+            background-color: rgb(53, 152, 220);
+            width: 450px;
+            height: 670px;
+            margin-left: 550px;
+            border-radius: 10px;
+        }
+        .page {
+            background-color: white;
+            width: 360px;
+            height: 550px;
+            position: absolute;
+            top: 30px;
+            left: 500px;
+            border-radius: 10px;
+        }
+        h1 {
+            margin-left: 20px;
+        }
+        .top {
+            margin-left: 20px;
+            color: gray;
+        }
+        .name {
+            width: 150px;
+            height: 30px;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+        .lname {
+            width: 150px;
+            height: 30px;
+            padding-left: 10px;
+        }
+        .more {
+            width: 320px;
+            height: 30px;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+        .link {
+            text-decoration: none;
+            color: rgb(53, 152, 220);
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease-in-out;
+        }
+        button {
+            background-color: rgb(53, 152, 220);
+            color: white;
+            width: 335px;
+            height: 40px;
+            margin-left: 10px;
+            transition:  all 0.3s ease-in-out;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        .login {
+            color: white;
+            position: absolute;
+            top: 585px;
+            left: 545px;
+        }
+        .linkk {
+            color: white;
+            transition: all 0.3s ease-in-out;
+        }
+
+        button:hover {
+            color: black;
+            background-color: transparent;
+        }
+        .link:hover {
+            border-bottom: 2px solid rgb(53, 152, 220);
+        }
+        .linkk:hover {
+            text-decoration: none;
+        }
+        .rem {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="color">
+        <div class="page">
+            <h1>Sign Up</h1>
+            <p class="top">Please fill in this form to create an account</p>
+            <hr>
+            <br>
+            <form action="./ok2.html">
+                <input type="text" name="firstname" id="firstname" required placeholder="First Name" class="name">
+                <input type="text" name="lastname" id="lastname" required placeholder="Last Name" class="lname"><br><br>
+                <input type="email" name="email" id="email" required placeholder="Email" class="more"><br><br>
+                <input type="password" name="password" id="password" required placeholder="Password" class="more"><br><br>
+                <input type="password" name="password" id="confirmpassword" required placeholder="Confirm Password" class="more"><br><br>
+                <label for="ok">
+                    <input class="rem" type="checkbox" name="ok" id="ok" required>
+                    I accept the <a href="" class="link">Terms of Use</a> & <a href="" class="link">Privacy Policy</a>
+                </label><br><br><br>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <p class="login">Already have an account? <a href="./login.html" class="linkk">Login here</a>.</p>
+    </div>
+</body>
+</html>
